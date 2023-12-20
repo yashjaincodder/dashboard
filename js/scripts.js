@@ -81,7 +81,7 @@ const barChartOptions = {
     theme: 'dark',
   },
   xaxis: {
-    categories: ['Laptop', 'Phone', 'Monitor', 'Headphones', 'Camera'],
+    categories: ['Public Parking', 'Residential', 'Private Parking', 'Off street', ],
     title: {
       style: {
         color: '#f5f7ff',
@@ -103,7 +103,7 @@ const barChartOptions = {
   },
   yaxis: {
     title: {
-      text: 'Count',
+      text: 'Parking Counts',
       style: {
         color: '#f5f7ff',
       },
@@ -134,13 +134,13 @@ barChart.render();
 const areaChartOptions = {
   series: [
     {
-      name: 'Purchase Orders',
-      data: [31, 40, 28, 51, 42, 109, 100],
+      name: 'Public',
+      data: [131, 140, 128, 51, 42, ],
     },
-    {
-      name: 'Sales Orders',
-      data: [11, 32, 45, 32, 34, 52, 41],
-    },
+    // {
+    //   name: 'Private',
+    //   data: [131, 140, 128, 51, 42, ]
+    // },
   ],
   chart: {
     type: 'area',
@@ -213,7 +213,7 @@ const areaChartOptions = {
   yaxis: [
     {
       title: {
-        text: 'Purchase Orders',
+        // text: 'Purchase Orders',
         style: {
           color: '#f5f7ff',
         },
@@ -227,7 +227,7 @@ const areaChartOptions = {
     {
       opposite: true,
       title: {
-        text: 'Sales Orders',
+        // text: 'Sales Orders',
         style: {
           color: '#f5f7ff',
         },
